@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.homePageFragment.schedule.activity.LeaderWorkScheduleListActivity">
+
+    <include layout="@layout/view_title_bar"></include>
+
+    <com.chinasoft.ctams.view.XListView
+        android:id="@+id/lv_work_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.chinasoft.ctams.view.XListView>
+
+</LinearLayout>

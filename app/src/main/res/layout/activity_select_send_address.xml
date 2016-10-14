@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_title_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <TextView
+            android:id="@+id/tv_selected_place"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="确定"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/colorBackgroundGray"
+            />
+        <EditText
+            android:id="@+id/et_select_address_filter"
+            android:layout_marginTop="5dip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_map_search"
+            android:drawableLeft="@mipmap/icon_search"
+            android:layout_toLeftOf="@+id/tv_selected_place"
+            android:paddingLeft="15dp"
+            android:hint="快速搜索"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/divierColor"
+        android:dividerHeight="0.5dp"></ListView>
+</LinearLayout>

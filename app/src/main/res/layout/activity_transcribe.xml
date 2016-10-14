@@ -1,0 +1,104 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        xmlns:tools="http://schemas.android.com/tools"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" >  
+      
+        <SurfaceView  
+            android:id="@+id/camera_preview"  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent" />  
+      
+        <LinearLayout  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentTop="true"  
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">  
+      
+            <TextView  
+                android:id="@+id/timestamp_minute_prefix"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:textColor="#7F00FF"  
+                android:textSize="30sp"  
+                android:text="0"/>  
+      
+            <TextView  
+                android:id="@+id/timestamp_minute_text"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:textColor="#7F00FF"  
+                android:textSize="30sp"  
+                android:text="0"/>  
+      
+            <TextView  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:textColor="#7F00FF"  
+                android:textSize="30sp"  
+                android:text=":"/>  
+      
+            <TextView  
+                android:id="@+id/timestamp_second_prefix"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:textColor="#7F00FF"  
+                android:textSize="30sp"  
+                android:text="0"/>  
+      
+            <TextView  
+                android:id="@+id/timestamp_second_text"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:textColor="#7F00FF"  
+                android:textSize="30sp"  
+                android:text="0"/>  
+        </LinearLayout>  
+      
+        <ImageButton  
+            android:id="@+id/record_shutter"  
+            android:layout_width="64dp"  
+            android:layout_height="64dp"  
+            android:layout_alignParentBottom="true"  
+            android:layout_centerHorizontal="true"  
+            android:layout_marginBottom="15dp"  
+            android:background="@android:color/transparent"  
+            android:scaleType="centerCrop"  
+            android:src="@mipmap/video_start" />
+        
+        <LinearLayout
+            android:id="@+id/ll_video_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/iv_transcribe_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/video_cancel"
+                />
+            <ImageView
+                android:id="@+id/iv_transcribe_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/video_save"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_video_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_return"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+      
+    </RelativeLayout>  

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundGray" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search_head"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/rl_search_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_return_gray" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@color/material_green"
+            android:text="搜索"
+            android:textColor="@color/white"
+             />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@id/bt_search"
+            android:layout_toRightOf="@id/rl_search_back"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/icon_map_search" >
+
+            <ImageView
+                android:id="@+id/iv_searchAddress_search"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/icon_search"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/et_search_keywords"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@id/iv_searchAddress_search"
+                android:background="@null"
+                android:textSize="13sp"
+                android:hint="请输入标题关键字"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/line_search"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBackgroundGray"
+        android:layout_below="@+id/rl_search_head"
+        ></View>
+
+    <com.chinasoft.ctams.view.XListView
+        android:id="@+id/lv_search_data"
+        android:layout_below="@+id/line_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+    </com.chinasoft.ctams.view.XListView>
+
+</RelativeLayout>

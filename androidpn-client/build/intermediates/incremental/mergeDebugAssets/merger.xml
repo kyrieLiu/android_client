@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\CTAMS_CLIENT\android_client\androidpn-client\assets"><file name="litepal.xml" path="F:\CTAMS_CLIENT\android_client\androidpn-client\assets\litepal.xml"/></source><source path="F:\CTAMS_CLIENT\android_client\androidpn-client\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\CTAMS_CLIENT\android_client\androidpn-client\build-types\debug\assets"/></dataSet></merger>

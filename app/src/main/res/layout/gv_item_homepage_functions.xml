@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp">
+
+        <ImageView
+            android:id="@+id/iv_item_gv_homepage_funtions"
+            android:layout_width="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/attention_push_gv_home_page_icon"
+            />
+        <ImageView
+            android:id="@+id/iv_item_gv_homepage_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_notification"
+            android:layout_toRightOf="@+id/iv_item_gv_homepage_funtions"
+            android:layout_alignTop="@+id/iv_item_gv_homepage_funtions"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_item_gv_homepage_funtions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:text="好友列表"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_item_gv_homepage_funtions"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

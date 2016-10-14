@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/rv_topic_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        >
+    <LinearLayout
+        android:id="@+id/ll_theme_operation"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_theme_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/mainColorBlue"
+            android:text="删除"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginRight="20dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_theme_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/mainColorBlue"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tv_item_patrol_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="巡逻计划任务一"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_item_patrol_plan_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息科"
+            android:layout_below="@+id/tv_item_patrol_name"
+            android:layout_alignLeft="@+id/tv_item_patrol_name"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_item_patrol_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-02-01 - 2016-03-05"
+            android:layout_alignTop="@+id/tv_item_patrol_plan_group"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

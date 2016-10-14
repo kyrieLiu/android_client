@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/view_title"
+        layout="@layout/view_title_bar"></include>
+    <WebView
+        android:id="@+id/wv_showMap"
+        android:layout_below="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <Button
+        android:id="@+id/bt_map_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="截屏保存"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

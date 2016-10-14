@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+   <include layout="@layout/view_title_bar"
+       android:id="@+id/view_chat_title"></include>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/bt_chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        <EditText
+            android:id="@+id/et_chat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_box"
+            android:layout_toLeftOf="@+id/bt_chat_send"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_chat_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transcriptMode="normal"
+        android:layout_below="@+id/view_chat_title"
+        android:layout_above="@+id/rl_chat_edit"
+        android:scrollbars="none"
+        android:divider="@null"
+       ></ListView>
+    <TextView
+        android:id="@+id/tv_chat_alert"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="消息记录过多,点击右上角菜单按钮可删除消息"
+        android:textColor="@color/black"
+        android:background="@color/material_yellow"
+        android:layout_below="@+id/view_chat_title"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

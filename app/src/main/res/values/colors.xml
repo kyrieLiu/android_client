@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="colorGray">#646160</color>
+    <color name="color_main_radioButton"> #0ABCDE</color>
+    <color name="divierColor">#e1e1e1</color>
+    <color name="mainColorBlue">#3E94E1</color>
+    <color name="dark_main_bg">#F0F4F7</color>
+    <color name="default_text_color">#728592</color>
+    <!--homepage-->
+    <color name="daily_title_drak_blue_homepage">#2C9ED0</color>
+    <color name="daily_name_light_blue_homepage">#3F92E0</color>
+    <!--通讯录slideview-->
+    <color name="colorBackgroundGray">#C0C0C0</color>
+    <color name="colorQQGreen">#B8E6FA</color>
+    <!--刷新控件颜色-->
+    <color name="material_red">#ffF44336</color>
+    <color name="material_green">#ff4CAF50</color>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="material_yellow">#ffFFEB3B</color>
+</resources>

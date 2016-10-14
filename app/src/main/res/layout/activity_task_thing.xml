@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_title_bar"/>
+    <com.chinasoft.ctams.view.XListView
+        android:id="@+id/lv_task_thing_list_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:divider="@null"
+        ></com.chinasoft.ctams.view.XListView>
+</LinearLayout>

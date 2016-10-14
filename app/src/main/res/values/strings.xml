@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">SmartPublisherSDKDemo</string>
+
+    <string name="radioButton_main_homePage">首页</string>
+    <string name="radioButton_main_date">值班管理</string>
+    <string name="radioButton_main_address_book">通讯录</string>
+    <string name="radioButton_main_mine">个人信息</string>
+    <!--http-->
+    <string name="getDataFailed">获取资料失败！请重试！</string>
+    <string name="data_is_null">暂无数据！</string>
+    <string name="no_more_data">暂无更多数据</string>
+    <string name="time_out">请求超时！请重试！</string>
+    <!--titlebar-->
+    <string name="home_page_titlebar">治安维护</string>
+
+    <!--Login-->
+    <string name="login_success">登陆成功！</string>
+    <string name="login_failed">登陆失败，请重试！</string>
+    <string name="login_wrong">用户名或密码错误！</string>
+    <string name="miss_username">请输入用户名！</string>
+    <string name="miss_password">请输入密码！</string>
+    <string name="logining">正在登陆中...</string>
+    <string name="dev_exception">设备异常,请重试！</string>
+
+    <!--HomePage-->
+    <string name="date_list_homepage_title">值班列表</string>
+    <string name="leader_list_homepage_title">领导工作</string>
+    <string name="office_list_homepage_title">办内工作</string>
+    <string name="time_date_list_homepage_title">时间</string>
+    <string name="people_date_list_homepage_title">值班人员</string>
+    <string name="detail_date_list_homepage_title">说明</string>
+    <string name="click_to_see_more">查看更多</string>
+
+    <!--个人信息-->
+    <string name="button_commit">提交</string>
+    <string name="updata_failed">更新资料失败！请重试！</string>
+    <string name="updata_success">更新资料成功！</string>
+
+
+    <!--信息报送-->
+    <string name="sendPaperTab1">未处理</string>
+    <string name="sendPaperTab2">审核通过</string>
+    <string name="sendPaperTab3">打回</string>
+
+    <!--<string-array name="messageReceived">-->
+    <!--<item>网络</item>-->
+    <!--<item>电话</item>-->
+    <!--<item>传真</item>-->
+    <!--</string-array>-->
+    <!--刷新控件-->
+    <integer-array name="material_colors">
+        <item>@color/material_red</item>
+        <item>@color/material_blue</item>
+        <item>@color/material_yellow</item>
+    </integer-array>
+
+    <string name="copyright">Copyright 2014~2016 www.daniulive.com v1.0.16.0423</string>
+    <string name="publisherURL">URL</string>
+    <string name="action_settings">Settings</string>
+    <string name="switchCameraText">前后置摄像头切换</string>
+    <string name="qq_qun">QQ群:294891451,  499687479</string>
+
+    <string-array name="messageReceived">
+        <item>请选择</item>
+        <item>首报</item>
+        <item>续报</item>
+        <item>重报</item>
+    </string-array>
+
+    <string-array name="sendPaperType">
+        <item>请选择</item>
+        <item>暴恐</item>
+        <item>火灾</item>
+        <item>交通事故</item>
+        <item>非法集会</item>
+    </string-array>
+
+</resources>

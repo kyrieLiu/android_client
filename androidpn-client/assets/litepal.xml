@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="project" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+       <mapping class="sql.ChatInformation"></mapping>
+        <mapping class="sql.AlreadyReadMessage"></mapping>
+        <mapping class="sql.TopicMessage"></mapping>
+    </list>
+</litepal>

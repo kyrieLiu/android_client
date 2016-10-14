@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinasoft.ctams">
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- rtsp -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!-- 授予程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.main.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.scheduleManager.DateListMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.addresssBook.ContactPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mediafragment.videoUpdate.UpDateVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.addresssBook.AllAddressBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sendPaper.activity.SendPaperDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sendPaper.activity.AddSendPaperActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.chat.ChatActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.chat.FriendsListActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="org.androidpn.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService">
+            <!--<intent-filter>-->
+                <!--<action android:name="org.androidpn.client.NotificationService" />-->
+            <!--</intent-filter>-->
+        </service>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- 注册静态广播接收器,接收推送消息 -->
+        <receiver android:name=".broadcast.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.chinasoft.ctams.broadcast.MyBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.map.MapActivity" />
+        <activity android:name=".activity.patrol.PatrolMainActivity">
+
+        </activity>
+        <activity android:name=".activity.statistic.StatisticActivity" />
+        <activity android:name=".activity.main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.scheduleManager.fragment.DateExcelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mediafragment.monitorPlay.MonitorVideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.patrol.PatrolFeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.patrol.PatrolProcessSendUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.patrol.RoutePatrolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.patrol.video.VideoUploadActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.search.activity.ComprehensiveSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.activity.ComprehensiveSearchDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mineMainFragment.CutPictureForHeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sendPaper.SendPaperMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".fragment.homePageFragment.schedule.activity.LeaderWorkScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.homePageFragment.schedule.activity.WorkArrangeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.homePageFragment.schedule.activity.LeaderPushWorkScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.homePageFragment.schedule.activity.OfficeWorkScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <!-- sendpaper -->
+
+        <activity
+            android:name=".fragment.homePageFragment.schedule.activity.OfficePushWorkScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mineMainFragment.activity.CutPictureForHeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mineMainFragment.activity.UpdatePersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.activity.TaskThingsListActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.task.activity.TaskThingDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.subjectFragment.SubjectDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.mediafragment.monitorList.activity.MonitorListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sendPaper.activity.SelectSendAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragment.mineMainFragment.activity.SelectAreaAndOrgActivity" />
+        <activity android:name=".activity.main.CheckVersionActivity" />
+        <activity
+            android:name="com.daniulive.smartpublisher.CameraPublishActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".activity.sendPaper.SendThingActivity"></activity>
+        <activity
+            android:name=".activity.patrol.video.TranscribeVideoActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+    </application>
+
+</manifest>

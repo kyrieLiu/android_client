@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar_main"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_update_person_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+            <TextView
+                android:id="@+id/tv_birthday_updatee_mine"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_height="40dp" />
+            <RadioGroup
+                android:id="@+id/rg_update_person_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbt_update_person_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="男"/>
+                <RadioButton
+                    android:id="@+id/rbt_update_person_info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="女"/>
+            </RadioGroup>
+        <com.chinasoft.ctams.view.ClearableEditTextWithIcon
+            android:id="@+id/et_update_person_info"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_commit_update_person_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_commit"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:background="@color/red"/>
+</LinearLayout>

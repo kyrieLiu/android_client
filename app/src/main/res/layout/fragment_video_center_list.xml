@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="#eee">
+    <com.chinasoft.ctams.view.XListView
+        android:id="@+id/lv_video_center_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:divider="#eee"
+        android:dividerHeight="20dp"></com.chinasoft.ctams.view.XListView>
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab_video_upload"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/icon_video_upload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"
+        fab:fab_type="normal"
+        fab:fab_shadow="true"
+        fab:fab_colorNormal="@color/mainColorBlue"
+        fab:fab_colorPressed="@color/dark_main_bg"
+        fab:fab_colorRipple="@color/divierColor"/>
+</RelativeLayout>
